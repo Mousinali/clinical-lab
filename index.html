@@ -437,7 +437,7 @@
 
     <main>
         <!-- Hero banner section -->
-         <section class="py-6">
+        <section class="py-6">
             <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-6">
 
                 <!-- LEFT: SLIDER -->
@@ -710,8 +710,7 @@
                         <div
                             class="relative z-10 rounded-2xl lg:overflow-hidden lg:shadow-[0_20px_50px_rgba(0,0,0,0.1)] transition-transform duration-500 lg:group-hover:scale-[1.02] lg:block flex justify-center">
                             <div class="relative lg:mx-0 mx-auto ">
-                                <img src="assets/images/about/Dr.K.N.Podder.jpg.jpeg"
-                                    alt="Dr. K. N. Poddar"
+                                <img src="assets/images/about/Dr.K.N.Podder.jpg.jpeg" alt="Dr. K. N. Poddar"
                                     class="lg:w-full md:h-[400px] xl:h-[500px]  object-contain lg:object-cover object-top lg:rounded-none rounded-2xl lg:shadow-inner" />
                                 <div
                                     class="absolute -bottom-6 -left-6 w-32 h-32 border-l-2 border-b-2 border-amber-400/50 block lg:hidden">
@@ -857,6 +856,117 @@
                         </div>
                     </div>
 
+                </div>
+
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-4 py-16">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+                <style>
+                    /* Required for 3D depth */
+                    .perspective {
+                        perspective: 1000px;
+                    }
+
+                    .preserve-3d {
+                        transform-style: preserve-3d;
+                    }
+
+                    .backface-hidden {
+                        backface-visibility: hidden;
+                    }
+
+                    .rotate-y-180 {
+                        transform: rotateY(180deg);
+                    }
+                </style>
+
+                <div class="relative group w-full max-w-xl perspective">
+                    <div
+                        class="absolute -top-6 -left-6 w-32 h-32 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob">
+                    </div>
+                    <div
+                        class="absolute -bottom-8 -right-6 w-32 h-32 bg-red-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000">
+                    </div>
+
+                    <div
+                        class="relative w-full aspect-[1.6/1] transition-all duration-700 preserve-3d group-hover:[transform:rotateY(180deg)] cursor-pointer">
+
+                        <div
+                            class="absolute inset-0 w-full h-full backface-hidden shadow-2xl rounded-3xl overflow-hidden border border-white">
+                            <img src="assets/images/about/front-side.png" class="w-full h-full object-cover"
+                                alt="Card Front">
+                        </div>
+
+                        <div
+                            class="absolute inset-0 w-full h-full backface-hidden rotate-y-180 shadow-2xl rounded-3xl overflow-hidden border border-white bg-blue-50 flex items-center justify-center">
+                            <img src="assets/images/about/back-side.png" class="w-full h-full object-cover"
+                                alt="Card Back">
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-4xl font-semibold text-blue-900 mb-4">Unlock Exclusive Health Benefits</h2>
+                        <p class="text-lg text-gray-600">Join our Privilege Program today and prioritize your family's
+                            health with priority services and special diagnostic rates.</p>
+                    </div>
+
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 bg-green-100 p-1 rounded-full text-green-600">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Priority Diagnostics</h4>
+                                <p class="text-gray-500 text-sm">Skip the queue with guaranteed faster report turnaround
+                                    times.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 bg-green-100 p-1 rounded-full text-green-600">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Exclusive Discounts</h4>
+                                <p class="text-gray-500 text-sm">Up to 20% off on all specialized genetic and clinical
+                                    tests.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 bg-green-100 p-1 rounded-full text-green-600">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Home Collection</h4>
+                                <p class="text-gray-500 text-sm">Complimentary sample collection from the comfort of
+                                    your home.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-xl shadow-lg transition-all active:scale-95">
+                        Apply for Card
+                    </button>
+                    <button class="bg-white border-2 border-blue-900 text-blue-900 hover:bg-blue-50 font-bold py-4 px-8 rounded-xl transition-all">
+                        View Pricing
+                    </button>
+                </div> -->
                 </div>
 
             </div>
@@ -1296,7 +1406,7 @@
             <div class="max-w-7xl mx-auto px-6 relative z-10">
 
                 <div class="text-center mb-16">
-                    <h2 class="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">
+                    <h2 class="text-2xl md:text-3xl font-bold text-slate-900">
                         Clinical Pathology & Hematology
                     </h2>
                     <p class="text-slate-500 mt-2 text-sm md:text-base max-w-xl mx-auto">
